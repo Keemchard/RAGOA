@@ -194,12 +194,24 @@ body {
   background-color: royalblue;
   background-color: #20366f;
   padding: 10px;
-  height: 500px;
+  height: 550px;
   border-radius: 10px;
+  position: relative;
+}
+.add {
+  position: absolute;
+  color: #e41376;
+  font-size: 30px;
+  top: 3px;
+  right: 10px;
+  transition: 0.25s;
+}
+.add:hover {
+  transform: scale(1.1);
 }
 
 .idea-content h3 {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .idea-content > div {
   padding: 30px 20px;
@@ -317,8 +329,24 @@ body {
 }
 
 .id-con {
+  position: relative;
   transition: 0.25s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.con-on {
+  border-left: 5px solid #e41376 !important;
+}
+.id-con .assign {
+  position: absolute;
+  font-size: 13px;
+  right: 10px;
+  bottom: 3px;
+  color: #e41376;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.assign:hover {
+  font-size: 16px;
 }
 .id-con:hover {
   transform: scale(1.05);
