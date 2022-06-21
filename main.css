@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding: 10px 30px;
 }
@@ -76,6 +76,8 @@ body {
   flex-direction: column;
   margin-right: 20px;
   padding: 25px 10px;
+  background-image: url(assets/ragoa\ bg.png);
+  background-size: cover;
 }
 .time {
   flex: 1;
@@ -327,4 +329,48 @@ body {
 }
 .step-con:hover {
   transform: scale(1.05);
+}
+
+/* MOSA */
+@media only screen and (max-width: 1200px) {
+  .cont2 {
+    flex-direction: column;
+  }
+  .cont2 > div {
+    flex: 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .cont3 {
+    flex-direction: column;
+  }
+  .cont3 > div {
+    flex: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .idea-content {
+    height: 600px;
+  }
+  .step-con {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .num {
+    margin-bottom: 10px;
+  }
+  .prob {
+    margin-bottom: 10px;
+  }
+  .date {
+    margin: 0px !important;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .my-pie-chart {
+      right: 10px;
+    }
+  }
 }
